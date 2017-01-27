@@ -40,9 +40,12 @@ OSTF，即OpenStack Testing Framework，體現在fuel界面上就是Health Check
 - Mcollective agents: 實現具體的任務像設備清理，網絡連接性測試
 - OSTF（OpenStack Testing Framwork,or Health Check）: 主要執行在部署完成後驗證openstack
 
+#模組協作流程
 fuel部署openstack的過程中，會有三種角色的節點出現:
 Master Node、Discovered Node、Managed Node
  
 - Master NodeL: 是fuel的主要部分，其幾乎全部的服務都跑在Master Node上面，整個部署正是從這個節點上發起 
 - Discovered Node: 是fuel發現了但還未分配任何角色的節點 
 - Managed Node是fuel已經分配了角色並安裝了系統的節點
+
+![fuel](http://yongluo2013.github.io/images/2013-12-12-quick-setup-openstack-with-fuel-in-30-minutes/fuel_master_fuel_arch.png)
