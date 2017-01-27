@@ -17,7 +17,7 @@ Fuel是一個開源的軟體用來部署和管理openstack，並且與openstck�
 ![fuel](https://wiki.openstack.org/w/images/3/3a/Fuel-architecture.png)
 
 ##模組##
-#fuel-web(https://github.com/openstack/fuel-web)
+#[fuel-web](https://github.com/openstack/fuel-web)
 使用python編寫，是fuel的核心運作模組nailgun，nailgun管理部署所需要的所有信息，包括磁區與網路配置，節點角色等。它負責整個部署過程中各項任務的編排。
 該模組同時也提供了fuel的介面/CLI，另外nailgun對外有提供REST API。nailgun將數據存儲在postgresql數據庫，通過AMQP將任務下發給執行者(astute worker)。
 
